@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #2874A6;
+    font-family: 'Bungee', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Bungee Shade', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 3px 8px black;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(1.2);
+}
+
+#color{
+    width: 130px;
+    height: 30px;
+    padding: 5px;
+    box-shadow: 0px 3px 5px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    background-color: white;
+} 
+
+#black {
+    background: #1C2833;
+}
+
+#rgb {
+    background: linear-gradient( #92dc7e, #64c987, #39b48e );
+}
+
+#reset {
+    background: #CB4335;
+}
+
+#slider{
+    -webkit-appearance: none;
+    background: #1C2833;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0px 3px 5px;
+    margin-bottom: 8px;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    width: 30px; 
+    height: 30px; 
+    background: #D5DBDB; 
+    border-radius: 50px;
+}
+
+#slider::-moz-range-thumb{
+    width: 25px; 
+    height: 25px; 
+    background: white; 
+    border-radius: 50px;
+}
+
+.value {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    height: 600px;
+    width: 600px;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    box-shadow: 0px 5px 10px;
+}
+
+.cell{
+    background-color: white;
+    border: 1px solid #F8F9F9;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#gh-logo {
+    width: 25px;
+    height: 25px;
+    padding-left: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#gh-logo:hover {
+    transform: rotate(360deg) scale(1.2);
+}
